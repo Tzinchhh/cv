@@ -1,0 +1,183 @@
+/* ---------visual aid------------- */
+* {
+	border: 0px dashed;
+ }
+
+
+/*----------- general------------- */ 
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato", Arial, Sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  color: #2f2f2f;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+t {
+  font-weight: 700;
+}
+
+sm{
+  font-size: 12px;
+}
+
+a:hover, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #297ACC;
+}
+.marker_list{
+  list-style-type: none;
+  line-height: 32px;
+}
+
+.marker_list:before {
+  content: "\2022";
+  padding-right: 6px;
+  font-size: 20px;
+  color: #00bf80;
+  font-weight: bold;
+  line-height: 32px;        
+  position: absolute;
+  left: 30px;
+   }
+.resume-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+/*----Nav Bar------------------*/
+
+#section-topbar {
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	overflow: visible;
+	font-size: 25px;
+}
+
+#section-topbar ul {
+	display: inline-block;
+	position: relative;
+	/* For IE, the outcast */
+	zoom:1;
+	*display: inline;
+}
+
+#section-topbar li {
+    display: inline-block;
+    float: left;
+    width: 80px;
+}
+
+#section-topbar a {
+  display: block;
+  text-decoration: none;
+  padding: 18px;
+  color: white;
+}
+
+#section-topbar a:hover {
+  background: #2c3e50;
+  text-decoration: none;
+}
+
+
+#topbar-inner {
+	background: #2f2f2f;
+	line-height: 0;
+	text-align: center;
+	font-size: 25px;
+}
+#topbar-inner a {
+  display: block;
+  text-decoration: none;
+  padding: 18px;
+  color: white;
+}
+
+#name {
+	font-size: 80px;
+	color: #052a0f;
+	font-weight: 600;
+	margin: 0px;
+	text-align: left;
+	position: relative;
+	margin-left: -4px;
+}
+
+#prof {
+	font-size: 40px;
+	color: #052a0f;
+	font-weight: 600;
+	margin: 0px;
+	text-align: left;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: right;
+  margin-bottom: 30px;
+}
+/*----Dark Wraps------------------*/
+.dark-background {
+	background: #052a0f;
+	color: white;
+}
+
+
+/*----Foot Wrap------------------*/
+#footwrap {
+	background: #2f2f2f;
+	padding-top: 60px;
+	padding-bottom: 60px;
+  color: white;
+}
+
+#footwrap a:hover,#footwrap a,#footwrap a:link,#footwrap a:visited,#footwrap a:active {
+  text-decoration: none;
+  color: #84C4DD;
+}
+
+.flex-item {
+    padding: 10px;
+    margin: 30px;
+
+}
+      /* Add your flexbox CSS below here */
+.flex-section {
+  	display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .flex-section {
+    	display: block;
+  }
+  .flex-item {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-inverse {
+    display: none;
+  }
+
+}
